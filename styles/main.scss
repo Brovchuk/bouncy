@@ -1,0 +1,234 @@
+$landing-color: #ffffff;
+$portfolio-color: #333b46;
+$team-color: #464646;
+$testimonial-color: #81868e;
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%; 
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	background-color: #F0F0F0; 
+}
+.landing {
+	height: 100vh;
+	position: relative;
+	width: 100vw;
+	background: url('../img/banner.jpg') no-repeat center center;
+	background-size: cover; 
+	color: $landing-color;  
+	&_logo {
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		cursor: pointer;
+	}
+	&_menu {
+		position: absolute;
+		top: 10%;
+		right:10%;
+		width: 25%;
+	}
+	&_list {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		&-li {
+			padding: 10px 15px;
+			border-radius: 10px;
+			border: none;
+			transition: 1s ease-out;
+			cursor: pointer;
+			border: .5px solid none;
+			&:hover {
+				border: .5px solid white;
+				transition: 1s ease-out;
+			}
+		}
+	}
+	&_title {
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		font-weight: 300;
+		font-size: 30px; 
+		&-name {
+			letter-spacing: 7px; 
+		}
+		&-descr {
+			margin-top: 50px;
+			font-size: 20px;
+		}
+	}
+	&_arrow {
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+		cursor: pointer;
+	}
+}
+.portfolio {
+	color: $portfolio-color;
+	height: 800px;
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+	&-title {
+		padding-top: 10%;
+		text-align: center;
+		letter-spacing: 7px; 
+		margin-bottom: 10%;
+	} 
+	&-descr {
+		margin-bottom: 15%;
+	}
+	&_menu {
+	}
+	&_list {
+		display: flex;
+		justify-content: space-between;
+		list-style:none;
+		width: 80%;
+		margin: 0 auto;
+		&-li {
+			font-weight: 600;
+			padding-bottom: 10px;
+			&:hover {
+				border-bottom: 2px solid $portfolio-color;
+				transition: 1s ease-in;
+			}
+		}
+	}
+}
+.team {
+	height: 700px;
+	text-align: center;
+	color: $team-color;
+	&_container {
+		display: flex;
+		justify-content: space-around;
+		width: 90%;
+		&-img{
+			width:50%;
+		}
+		&-info {
+			width: 50%;
+			text-align: right;
+		}
+		&-title {
+			font-weight: 700;
+			margin-bottom: 30px;
+			border-right: 4px solid $team-color;
+			padding-right: 40px;
+			& span{
+				font-weight: 400;
+			}
+		}
+		&-descr {
+			width: 80%;
+			float: right;
+			padding-right: 40px;
+		}
+	}
+}
+.contact {
+	height: 170px;
+	width: 100%;
+	background: url('../img/contact.jpg') no-repeat center center;
+	background-size: cover;   
+	&-title {
+		text-align: center;
+		color: $landing-color;
+		font-size: 20px;
+		font-weight: 300; 
+		padding-top: 40px;
+		margin-bottom: 30px;
+	}
+	&-button {
+		text-align: center;
+	}
+	&-btn {
+		background: none;
+		border: 1px solid white;
+		border-radius: 10px;
+		padding: 10px 20px;
+		color: $landing-color;
+		cursor: pointer;
+		transition: .5s ease;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+.testimonials {
+	text-align: center;
+}
+.bio_container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #FFF; 
+	height: 200px;
+	padding: 30px;
+	color: $testimonial-color;
+}
+.bio_info {
+	width: 70%;
+	text-align: left;
+	&-name {
+		margin-top: 30px;
+		font-weight: 700;
+	}
+}
+.map {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.copyright {
+	text-align: center;
+	padding-top: 50px;
+	background-color: white;
+	&-logo {
+		margin-bottom: 30px;
+	}
+	&-info {
+		margin-bottom: 30px;
+	}
+	&_icons {
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			width: 15%;
+			margin: 0 auto;
+			list-style: none;
+			padding-bottom: 50px;
+		}
+	}
+}
+
+
+
+.section-title {
+	padding-top: 10%;
+	text-align: center;
+	letter-spacing: 7px; 
+	margin-bottom: 45px;
+	font-size: 20px; 	
+}
+.section-descr {
+	margin-bottom: 50px;	
+}
+iframe {
+	width: 100%;
+}
